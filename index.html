@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <link rel="icon" type="image/png" sizes="32x32" href="Imagens/Favicon-32x32-Logo.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="Imagens/Favicon-16x16-Logo.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="Imagens/Apple-Touch-Icon-Logo.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ivonildo Santos Ads - Home</title>
+        <style>
+            body
+            {
+                background-image: url("Imagens/BackGround.png");
+                font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-position: center;
+                background-size: 100% 100%;
+                background-attachment: fixed;
+            }
+            .container
+            {
+                position: fixed;
+                width: 100%;
+                height: 15%;
+                top: 0px;         
+            }
+            .container img
+            {
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
+            .head-container
+            {
+                box-shadow: 0px 5px 10px 0 rgba(0,0,0,.5);
+            }
+            .logo-head
+            {
+                background: none;
+                border: none;
+                position: fixed;
+                top: 2%;
+                left: 125px;
+                width: 450px;
+                cursor: pointer;
+            }
+            .textos-principais
+            {
+                position: fixed;
+                color: white;
+                width: 600px;
+                height: 150px;
+                margin-top: 10%;
+                left: 5%;
+            }
+            .titulo-principal
+            {
+                font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+                text-align: center;
+                font-size: 38px;
+                font-weight: 600;
+            }
+            .descricao
+            {
+                font-family: "Roboto", Arial, Helvetica, sans-serif;
+                text-align: justify;
+                font-size: 18px;
+                font-weight: 400;
+            }
+            .destaque-texto
+            {
+                color: cyan;
+            }
+            .text-rede
+            {
+                position: fixed;
+                text-decoration: none;
+                color: white;
+                top: 40px;
+                left: 82%;
+                font-size: 14px;
+                font-family: "Roboto", Arial, Helvetica, sans-serif;
+                font-weight: 500;
+                transition: 0.5s ease;
+            }
+            .text-ctt
+            {
+                position: fixed;
+                text-decoration: none;
+                color: white;
+                top: 40px;
+                left: 88%;
+                font-size: 14px;
+                font-family: "Roboto", Arial, Helvetica, sans-serif;
+                font-weight: 500;
+                transition: 0.5s ease;
+            }
+            .text-rede:hover
+            {
+                color: cyan;
+                cursor: pointer;
+            }
+            .text-ctt:hover
+            {
+                color: cyan;
+                cursor: pointer;
+            }
+            .hero
+            {
+                position: relative;
+            }
+            .button-getlead
+            {
+                position: relative;
+                top: 100px;
+                left: 12%;
+                background-color: #0088FF;
+                text-decoration: none;
+                color: #ffffff;
+                border: none;
+                padding: 30px 100px;
+                font-family: "Almarai", Arial, Helvetica;
+                font-size: 24px;
+                font-weight: bold;
+                border-radius: 50px;
+                box-shadow: 0 0 15px rgba(97, 85, 245, 1);
+                cursor: pointer;
+                transition: 0.5s;
+            }
+            .button-getlead:hover
+            {
+                background-color: #53afff;
+            }
+            .hero
+            {
+                position: relative;
+            }
+            .grafic-border
+            {
+                position: absolute;
+                width: 300px;
+                height: auto;
+                left: 800px;
+                top: -120px;
+                filter: brightness(0) saturate(0%) invert(100%) sepia(100%) saturate(0%) hue-rotate(155deg);
+                transition: 0.5s ease;
+            }
+            .grafic-bar-1
+            {
+                position: absolute;
+                transform-origin: bottom;
+                width: 20px;
+                height: 295px;
+                left: 800px;
+                top: -120px;
+                transform: scaleY(.1);
+                filter: brightness(0) saturate(0%) invert(100%) sepia(100%) saturate(0%) hue-rotate(155deg);
+                transition: 0.5s ease;
+                pointer-events: none;
+            }
+            .grafic-bar-2
+            {
+                position: absolute;
+                transform-origin: bottom;
+                width: 20px;
+                height: 295px;
+                left: 825px;
+                top: -120px;
+                transform: scaleY(.05);
+                filter: brightness(0) saturate(0%) invert(100%) sepia(100%) saturate(0%) hue-rotate(155deg);
+                transition: 0.5s ease;
+                pointer-events: none;
+            }
+            .grafic-bar-3
+            {
+                position: absolute;
+                transform-origin: bottom;
+                width: 20px;
+                height: 295px;
+                left: 850px;
+                top: -120px;
+                transform: scaleY(.15);
+                filter: brightness(0) saturate(0%) invert(100%) sepia(100%) saturate(0%) hue-rotate(155deg);
+                transition: 0.5s ease;
+                pointer-events: none;
+            }
+            .grafic-bar-4
+            {
+                position: absolute;
+                transform-origin: bottom;
+                width: 20px;
+                height: 295px;
+                left: 875px;
+                top: -120px;
+                transform: scaleY(.1);
+                filter: brightness(0) saturate(0%) invert(100%) sepia(100%) saturate(0%) hue-rotate(155deg);
+                transition: 0.5s ease;
+                pointer-events: none;
+            }
+            .grafic-bar-5
+            {
+                position: absolute;
+                transform-origin: bottom;
+                width: 20px;
+                height: 295px;
+                left: 900px;
+                top: -120px;
+                transform: scaleY(.2);
+                filter: brightness(0) saturate(0%) invert(100%) sepia(100%) saturate(0%) hue-rotate(155deg);
+                transition: 0.5s ease;
+                pointer-events: none;
+            }
+            .grafic-bar-6
+            {
+                position: absolute;
+                transform-origin: bottom;
+                width: 20px;
+                height: 295px;
+                left: 925px;
+                top: -120px;
+                transform: scaleY(.05);
+                filter: brightness(0) saturate(0%) invert(100%) sepia(100%) saturate(0%) hue-rotate(155deg);
+                transition: 0.5s ease;
+                pointer-events: none;
+            }
+            .grafic-bar-7
+            {
+                position: absolute;
+                transform-origin: bottom;
+                width: 20px;
+                height: 295px;
+                left: 950px;
+                top: -120px;
+                transform: scaleY(.15);
+                filter: brightness(0) saturate(0%) invert(100%) sepia(100%) saturate(0%) hue-rotate(155deg);
+                transition: 0.5s ease;
+                pointer-events: none;
+            }
+            .grafic-bar-8
+            {
+                position: absolute;
+                transform-origin: bottom;
+                width: 20px;
+                height: 295px;
+                left: 975px;
+                top: -120px;
+                transform: scaleY(.25);
+                filter: brightness(0) saturate(0%) invert(100%) sepia(100%) saturate(0%) hue-rotate(155deg);
+                transition: 0.5s ease;
+                pointer-events: none;
+            }
+            .grafic-bar-9
+            {
+                position: absolute;
+                transform-origin: bottom;
+                width: 20px;
+                height: 295px;
+                left: 1000px;
+                top: -120px;
+                transform: scaleY(.3);
+                filter: brightness(0) saturate(0%) invert(100%) sepia(100%) saturate(0%) hue-rotate(155deg);
+                transition: 0.5s ease;
+                pointer-events: none;
+            }
+            .grafic-bar-10
+            {
+                position: absolute;
+                transform-origin: bottom;
+                width: 20px;
+                height: 295px;
+                left: 1025px;
+                top: -120px;
+                transform: scaleY(.25);
+                filter: brightness(0) saturate(0%) invert(100%) sepia(100%) saturate(0%) hue-rotate(155deg);
+                transition: 0.5s ease;
+                pointer-events: none;
+            }
+            .grafic-bar-11
+            {
+                position: absolute;
+                transform-origin: bottom;
+                width: 20px;
+                height: 295px;
+                left: 1050px;
+                top: -120px;
+                transform: scaleY(.15);
+                filter: brightness(0) saturate(0%) invert(100%) sepia(100%) saturate(0%) hue-rotate(155deg);
+                transition: 0.5s ease;
+                pointer-events: none;
+            }
+            .grafic-bar-12
+            {
+                position: absolute;
+                transform-origin: bottom;
+                width: 20px;
+                height: 295px;
+                left: 1075px;
+                top: -120px;
+                transform: scaleY(.3);
+                filter: brightness(0) saturate(0%) invert(100%) sepia(100%) saturate(0%) hue-rotate(155deg);
+                transition: 0.5s ease;
+                pointer-events: none;
+            }
+
+            .hero:has(.button-getlead:hover) .grafic-bar-1
+            {
+                transform: scaleY(.4);
+                filter: brightness(0) saturate(100%) invert(50%) sepia(100%) saturate(320%) hue-rotate(155deg);
+                box-shadow: 0 0 5px rgba(97, 85, 245, 1);
+            }
+            .hero:has(.button-getlead:hover) .grafic-bar-2
+            {
+                transform: scaleY(.5);
+                filter: brightness(0) saturate(100%) invert(50%) sepia(100%) saturate(320%) hue-rotate(155deg);
+                box-shadow: 0 0 5px rgba(97, 85, 245, 1);
+            }
+            .hero:has(.button-getlead:hover) .grafic-bar-3
+            {
+                transform: scaleY(.45);
+                filter: brightness(0) saturate(100%) invert(50%) sepia(100%) saturate(320%) hue-rotate(155deg);
+                box-shadow: 0 0 5px rgba(97, 85, 245, 1);
+            }
+            .hero:has(.button-getlead:hover) .grafic-bar-4
+            {
+                transform: scaleY(.65);
+                filter: brightness(0) saturate(100%) invert(50%) sepia(100%) saturate(320%) hue-rotate(155deg);
+                box-shadow: 0 0 5px rgba(97, 85, 245, 1);
+            }
+            .hero:has(.button-getlead:hover) .grafic-bar-5
+            {
+                transform: scaleY(.7);
+                filter: brightness(0) saturate(100%) invert(50%) sepia(100%) saturate(320%) hue-rotate(155deg);
+                box-shadow: 0 0 5px rgba(97, 85, 245, 1);
+            }
+            .hero:has(.button-getlead:hover) .grafic-bar-6
+            {
+                transform: scaleY(.8);
+                filter: brightness(0) saturate(100%) invert(50%) sepia(100%) saturate(320%) hue-rotate(155deg);
+                box-shadow: 0 0 5px rgba(97, 85, 245, 1);
+            }
+            .hero:has(.button-getlead:hover) .grafic-bar-7
+            {
+                transform: scaleY(.85);
+                filter: brightness(0) saturate(100%) invert(50%) sepia(100%) saturate(320%) hue-rotate(155deg);
+                box-shadow: 0 0 5px rgba(97, 85, 245, 1);
+            }
+            .hero:has(.button-getlead:hover) .grafic-bar-8
+            {
+                transform: scaleY(.8);
+                filter: brightness(0) saturate(100%) invert(50%) sepia(100%) saturate(320%) hue-rotate(155deg);
+                box-shadow: 0 0 5px rgba(97, 85, 245, 1);
+            }
+            .hero:has(.button-getlead:hover) .grafic-bar-9
+            {
+                transform: scaleY(.85);
+                filter: brightness(0) saturate(100%) invert(50%) sepia(100%) saturate(320%) hue-rotate(155deg);
+                box-shadow: 0 0 5px rgba(97, 85, 245, 1);
+            }
+            .hero:has(.button-getlead:hover) .grafic-bar-10
+            {
+                transform: scaleY(.9);
+                filter: brightness(0) saturate(100%) invert(50%) sepia(100%) saturate(320%) hue-rotate(155deg);
+                box-shadow: 0 0 5px rgba(97, 85, 245, 1);
+            }
+            .hero:has(.button-getlead:hover) .grafic-bar-11
+            {
+                transform: scaleY(.95);
+                filter: brightness(0) saturate(100%) invert(50%) sepia(100%) saturate(320%) hue-rotate(155deg);
+                box-shadow: 0 0 5px rgba(97, 85, 245, 1);
+            }
+            .hero:has(.button-getlead:hover) .grafic-bar-12
+            {
+                transform: scaleY(1);
+                filter: brightness(0) saturate(100%) invert(50%) sepia(100%) saturate(320%) hue-rotate(155deg);
+                box-shadow: 0 0 5px rgba(97, 85, 245, 1);
+            }
+
+            .hero:has(.button-getlead:hover) .grafic-border
+            {
+                filter: drop-shadow(0 0 5px rgba(97, 85, 245, 1)) brightness(0) saturate(100%) invert(50%) sepia(100%) saturate(320%) hue-rotate(155deg);
+            }
+
+            .textos-compl
+            {
+                position: fixed;
+                bottom: 0;
+                height: 5px;
+                color: white;
+                font-family: "Encode Sans Semi Expanded", Arial, Helvetica;
+                font-size: 10px;
+                font-weight: 200;
+                font-style: normal;
+            }
+            .texto-copy
+            {
+                text-align: center;
+                width: 240px;
+                margin-left: 25px;
+                margin-top: -30px; 
+                
+            }
+            .texto-mkt
+            {
+                position: absolute;
+                text-align: center;
+                width: 240px;
+                top: -37px;
+                left: 1040px;
+            }
+            .line-foot
+            {
+                position: absolute;
+                font-size: 24px;
+                top: -12px;
+                left: 188px;
+            }
+            .logo-foot
+            {
+                position: absolute;
+                top: -42px;
+                left: 1238px;
+                width: 75px;
+            }         
+            .container-redes
+            {
+                position: absolute;
+                background-color: rgb(19, 19, 19);
+                width: 300px;
+                height: 200px;
+                top: 20%;
+                left: -200%;
+                padding-top: 200px;
+                padding-left: 300px;
+                border-radius: 25px;
+                z-index: 1000;
+                transition: 0.5s ease;
+            }
+            .text-container-redes
+            {
+                position: absolute;
+                color: white;
+                font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+                font-weight: 600;
+                font-size: 36px;
+                text-align: center;
+                width: 200px;
+                left: 200px;
+                top: -10px;
+            }
+            .exit-cotainer-redes
+            {
+                position: absolute;
+                color: white;
+                font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+                font-weight: 400;
+                font-size: 36px;
+                text-align: center;
+                width: 25px;
+                left: 520px;
+                top: 24px;
+                transition: 0.5s ease;
+            }
+            .exit-cotainer-redes:hover
+            {
+                color: red;
+                cursor: pointer;
+            }
+            .instagram-logo
+            {
+                position: absolute;
+                width: 75px;
+                height: 75px;
+                left: 100px;
+                top: 100px;
+            }
+            .instagram-link
+            {
+                position: absolute;
+                color: white;
+                font-family: "Encode Sans Semi Expanded", Arial, Helvetica, sans-serif;
+                font-weight: 600;
+                font-size: 24px;
+                text-align: left;
+                text-decoration: none;
+                width: 250px;
+                left: 210px;
+                top: 120px;
+                transition: 0.5s ease;
+            }
+            .instagram-link:hover
+            {
+                color: rgb(255, 0, 120); 
+            }
+            .facebook-logo
+            {
+                position: absolute;
+                width: 75px;
+                height: 75px;
+                left: 100px;
+                top: 250px;
+            }
+            .facebook-link
+            {
+                position: absolute;
+                color: white;
+                font-family: "Encode Sans Semi Expanded", Arial, Helvetica, sans-serif;
+                font-weight: 600;
+                font-size: 24px;
+                text-align: left;
+                text-decoration: none;
+                width: 250px;
+                left: 210px;
+                top: 270px;
+                transition: 0.5s ease;
+            }
+            .facebook-link:hover
+            {
+                color: rgb(0, 119, 255);
+            }
+
+            .container-ctt
+            {
+                position: absolute;
+                background-color: rgb(19, 19, 19);
+                width: 300px;
+                height: 200px;
+                top: 20%;
+                left: -200%;
+                padding-top: 200px;
+                padding-left: 300px;
+                border-radius: 25px;
+                z-index: 1000;
+                transition: 0.5s ease;
+            }
+            .text-container-ctt
+            {
+                position: absolute;
+                color: white;
+                font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+                font-weight: 600;
+                font-size: 36px;
+                text-align: center;
+                width: 200px;
+                left: 200px;
+                top: -10px;
+            }
+            .exit-cotainer-ctt
+            {
+                position: absolute;
+                color: white;
+                font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+                font-weight: 400;
+                font-size: 36px;
+                text-align: center;
+                width: 25px;
+                left: 520px;
+                top: 24px;
+                transition: 0.5s ease;
+            }
+            .exit-cotainer-ctt:hover
+            {
+                color: red;
+                cursor: pointer;
+            }
+            .gmail-logo
+            {
+                position: absolute;
+                width: auto;
+                height: 55px;
+                left: 88px;
+                top: 105px;
+            }
+            .email-link
+            {
+                position: absolute;
+                color: white;
+                font-family: "Encode Sans Semi Expanded", Arial, Helvetica, sans-serif;
+                font-weight: 600;
+                font-size: 18px;
+                text-align: left;
+                text-decoration: none;
+                width: 250px;
+                left: 210px;
+                top: 120px;
+                transition: 0.5s ease;
+            }
+            .email-link:hover
+            {
+                color: red; 
+            }
+            .whatsapp-logo
+            {
+                position: absolute;
+                width: 75px;
+                height: 75px;
+                left: 100px;
+                top: 250px;
+            }
+            .whatsapp-link
+            {
+                position: absolute;
+                color: white;
+                font-family: "Encode Sans Semi Expanded", Arial, Helvetica, sans-serif;
+                font-weight: 600;
+                font-size: 24px;
+                text-align: left;
+                text-decoration: none;
+                width: 250px;
+                left: 210px;
+                top: 270px;
+                transition: 0.5s ease;
+            }
+            .whatsapp-link:hover
+            {
+                color: gray;
+                cursor: not-allowed;
+            }
+
+            @media (max-width: 768px) 
+            {
+
+                /* ===== BODY ===== */
+                body 
+                {
+                    
+                    background-size: cover;
+                    background-attachment: fixed;
+                }
+            
+                /* ===== HEADER ===== */
+                .container 
+                {
+                    position: relative;
+                    width: 100%;
+                    height: 75px;
+                    top: 0px;   
+                }
+            
+                .logo-head 
+                {
+                    position: absolute;
+                    width: 60%;
+                    left: 35%;
+                    transform: translateX(-50%);
+                    top: 25%
+                }
+            
+                .text-rede
+                {
+                    position: absolute;
+                    font-size: 8px;
+                    left: 70%;
+                    top: 30%;
+                    margin: 10px;
+                }
+                .text-ctt 
+                {
+                    position: absolute;
+                    font-size: 50%;
+                    left: 82%;
+                    top: 30%;
+                    margin: 10px;                  
+                }
+            
+                /* ===== HERO TEXT ===== */
+                .textos-principais 
+                {
+                    position: relative;
+                    width: 90%;
+                    height: auto;
+                    margin: 15% auto;
+                    left: auto;
+                    text-align: center;
+                }
+            
+                .titulo-principal 
+                {
+                    font-size: 26px;
+                }
+            
+                .descricao 
+                {
+                    font-size: 15px;
+                    text-align: center;
+                }
+            
+                /* ===== BUTTON ===== */
+                .button-getlead 
+                {
+                    position: relative;
+                    top: auto;
+                    left: auto;
+                    margin: 30px auto;
+                    padding: 18px 40px;
+                    font-size: 18px;
+                    display: inline-block;
+                }
+            
+                /* ===== GRAPHIC (HIDE ON MOBILE) ===== */
+                .grafic-border,.grafic-bar-1,.grafic-bar-2,.grafic-bar-3,.grafic-bar-4,.grafic-bar-5,.grafic-bar-6,.grafic-bar-7,.grafic-bar-8,.grafic-bar-9,.grafic-bar-10,.grafic-bar-11,.grafic-bar-12 
+                {
+                    display: none;
+                }
+            
+                /* ===== FOOTER ===== */
+                .textos-compl 
+                {
+                    position: absolute;
+                    width: 100%;
+                    height: 200px;
+                    margin-top: 20%;
+                    bottom: 0px;
+                    left: auto;
+                    text-align: center;
+                }
+            
+                .texto-mkt
+                {
+                    position: relative;
+                    width: max-content;
+                    height: auto;
+                    margin: 0;
+                    bottom: 0px;
+                    top: 0;
+                    left: 34%;
+                }
+
+                .logo-foot 
+                {
+                    position: relative;
+                    width: 25%;
+                    height: auto;
+                    left: auto;
+                    bottom: 0px;
+                    top: 20px;
+                }
+
+                .texto-copy
+                {
+                    position: absolute;
+                    bottom: 0px;
+                    margin-left: 0px;
+                }
+
+                .line-foot
+                {
+                    display: none;
+                }
+            
+                /* ===== MODAL REDES / CONTATOS ===== */
+                .container-redes,.container-ctt 
+                {
+                    width: 80%;
+                    height: auto;
+                    left: -200%;
+                    top: 10%;
+                    padding: 40px 20px;
+                }
+            
+                .text-container-redes,.text-container-ctt 
+                {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    width: 100%;     
+                    text-align: center;
+                    font-size: 24px;
+                }
+            
+                .exit-cotainer-redes,.exit-cotainer-ctt 
+                {
+                    right: 25px;
+                    top: 15px;
+                    left: auto;
+                    position: absolute;
+                    
+                }
+            
+                .instagram-logo,.facebook-logo,.whatsapp-logo 
+                {
+                    position: relative;
+                    width: 50px;
+                    height: 50px;
+                    left: auto;
+                    top: auto;
+                    margin: 50px auto 5px;
+                    display: block;
+                }
+
+                .gmail-logo
+                {
+                    position: relative;
+                    width: 75px;
+                    height: 50px;
+                    left: auto;
+                    top: auto;
+                    margin: 50px auto 5px;
+                    display: block;
+                }
+            
+                .instagram-link,.facebook-link,.email-link,.whatsapp-link 
+                {
+                    position: relative;
+                    width: 100%;
+                    left: 0px;
+                    top: 15px;
+                    display: block;
+                    text-align: center;
+                    font-size: 16px;
+                    margin-bottom: 20px;
+                }
+            }
+
+        </style>
+
+        
+    </head>
+    <body>
+        <div class="container">
+            <img src="Imagens/Header-Site.png" class="head-container" alt="container-head">
+                <a href= "IvonildoSantosAds-HomePage.html">
+                    <button class="logo-head">
+                        <img src="Imagens/Logo-Header.png" alt="logo-head-tp">
+                    </button>
+                </a>
+                <a class="text-rede" onclick="abrirAba()">
+                    REDES
+                </a>
+                <a class="text-ctt" onclick="abrirAbaCtt()">
+                    CONTATOS
+                </a>
+        </div>
+
+        <div class="textos-principais">
+            <p class="titulo-principal">
+                PERFORMANCE EM MÍDIA PAGA
+            </p>
+
+            <p class="descricao">
+                Eu sou o <a class="destaque-texto">Ivonildo Santos</a>, sou Gestor de Tráfego, Desenhista da Construção Civil, Designer Gráfico, Roteirista e Game Developer.
+            </p>
+
+            <div class="hero">
+                <a href="mailto:ivonildo.santos.work@gmail.com" target="_blank" rel="noopener noreferrer" class="button-getlead">
+                    ENTRE EM CONTATO
+                </a>
+
+                <img src="Imagens/Grafic-Border.png" class="grafic-border">
+                <img src="Imagens/Grafic-Bar.png" class="grafic-bar-1">
+                <img src="Imagens/Grafic-Bar.png" class="grafic-bar-2">
+                <img src="Imagens/Grafic-Bar.png" class="grafic-bar-3">
+                <img src="Imagens/Grafic-Bar.png" class="grafic-bar-4">
+                <img src="Imagens/Grafic-Bar.png" class="grafic-bar-5">
+                <img src="Imagens/Grafic-Bar.png" class="grafic-bar-6">
+                <img src="Imagens/Grafic-Bar.png" class="grafic-bar-7">
+                <img src="Imagens/Grafic-Bar.png" class="grafic-bar-8">
+                <img src="Imagens/Grafic-Bar.png" class="grafic-bar-9">
+                <img src="Imagens/Grafic-Bar.png" class="grafic-bar-10">
+                <img src="Imagens/Grafic-Bar.png" class="grafic-bar-11">
+                <img src="Imagens/Grafic-Bar.png" class="grafic-bar-12">
+            </div>
+        </div>
+
+        
+
+        <div class="textos-compl">
+
+            <p class="texto-copy">
+                Todos os direitos reservados à Ivonido Santos Ads
+            </p>
+
+            <p class="texto-mkt">
+                    Design e programação por<a class="line-foot"> | </a>
+            </p>
+
+            <img src="Imagens/Logo-site-100x50.png" class="logo-foot" alt="logo-footer">
+
+        </div>
+
+        <div id="container-redes-jv" class="container-redes">
+            <p class="text-container-redes">
+                REDES
+            </p>
+
+            <a class="exit-cotainer-redes" onclick="fecharAba()">
+                x
+            </a>
+
+            <img src="Imagens/instagram-40-logo.png" class="instagram-logo">
+            <a href="https://www.instagram.com/ivonildo.santos.ads/" class="instagram-link">
+                @ivonildo.santos.ads
+            </a>
+
+            <img src="Imagens/facebook-logo.png" class="facebook-logo">
+            <a href="https://www.facebook.com/profile.php?id=61579066329906" class="facebook-link">
+                Ivonildo Santos
+            </a>
+
+        </div>
+
+        <div id="container-ctt-jv" class="container-ctt">
+
+            <p class="text-container-ctt">
+                CONTATOS
+            </p>
+
+            <a class="exit-cotainer-ctt" onclick="fecharAbaCtt()">
+                x
+            </a>
+
+            <img src="Imagens/Gmail-Logo.png" class="gmail-logo">
+            <a href="mailto:ivonildo.santos.work@gmail.com" target="_blank" rel="noopener noreferrer" class="email-link">
+                ivonildo.santos.work@gmail.com
+            </a>
+
+            <img src="Imagens/Whatsapp-Logo.png" class="whatsapp-logo">
+            <a class="whatsapp-link">
+                Em Breve
+            </a>
+
+        </div>
+
+        <script>
+            
+            function abrirAba()
+            {
+                const redes = document.getElementById("container-redes-jv");
+                const contatos = document.getElementById("container-ctt-jv");
+
+                if (window.matchMedia("(max-width: 768px)").matches) 
+                {
+                    redes.style.left = "5%";
+                    redes.style.top = "10%";
+                } 
+                else 
+                {
+                    redes.style.left = "26%";
+                }
+            
+                contatos.style.left = "-200%";
+            }
+
+            function fecharAba()
+            {
+                document.getElementById("container-redes-jv").style.left = "-200%";
+            }
+
+            function abrirAbaCtt()
+            {
+                const redes = document.getElementById("container-redes-jv");
+                const contatos = document.getElementById("container-ctt-jv");
+
+                if (window.matchMedia("(max-width: 768px)").matches) {
+                    contatos.style.left = "5%";
+                    contatos.style.top = "10%";
+                } else {
+                    contatos.style.left = "26%";
+                }
+            
+                redes.style.left = "-200%";
+            }
+
+            function fecharAbaCtt()
+            {
+                document.getElementById("container-ctt-jv").style.left = "-200%";
+            }
+
+        </script>
+
+    </body>
